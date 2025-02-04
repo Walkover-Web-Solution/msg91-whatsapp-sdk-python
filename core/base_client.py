@@ -7,13 +7,13 @@ class BaseClient:
         self.session = SDKSession(base_url, headers)
 
     def _get(self, endpoint, params=None):
-        return self.session.request("GET", endpoint, params=params)
+        return self.session.request("GET", params=params)
 
-    def _post(self, endpoint, data=None, json=None):
-        return self.session.request("POST", endpoint, data=data, json=json)
+    def _post(self, data=None, json=None):
+        return self.session.request("POST", data=data, json=json)
 
-    def _put(self, endpoint, data=None, json=None):
-        return self.session.request("PUT", endpoint, data=data, json=json)
+    def _put(self, data=None, json=None):
+        return self.session.request("PUT", data=data, json=json)
 
-    def _delete(self, endpoint, data=None, json=None):
-        return self.session.request("DELETE", endpoint, data=data, json=json)
+    def _delete(self, data=None, json=None):
+        return self.session.request("DELETE", data=data, json=json)
