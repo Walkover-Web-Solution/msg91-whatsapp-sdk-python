@@ -92,7 +92,7 @@ validate_bulk_response(response)
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/msg91-whatsapp-SDK.git
+git clone https://github.com/yourusername/msg91-whatsapp-sdk-python.git
 cd msg91-whatsapp-SDK
 pip install -r requirements.txt
 ```
